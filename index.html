@@ -32,13 +32,9 @@
        var question = document.getElementById("question");
        
        eightball.addEventListener("click", function() {
-         if (question.value.length < 1) {
-           alert('Enter a question!');
-         } else {
            eight.innerText = "";
            var num = Math.floor(Math.random() * Math.floor(answers.length));
            answer.innerText = answers[num];
-         }
        });
     };
   </script>
@@ -105,7 +101,6 @@
  </head>
  <body>
   <div id="content">
-    <button type="button" id="question">Yes..., but does it scale?!</button>
     <div id="eight-ball" class="eight-ball">
       <div class="answer">
         <p id="eight">8</p>
